@@ -59,10 +59,16 @@
       </div>
     </header>
     <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+      </div>
+
       <div class="first-container">
         <div class="container">
           <h1 class="primary-h">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="buttons-index" type="button">
+          <button class="buttons-index" type="button" data-modal-open>
             <span class="buttons-index-item">Zamów usługe</span>
           </button>
         </div>
@@ -412,5 +418,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
