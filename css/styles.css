@@ -74,6 +74,11 @@ body {
 .studio-piece-logotype {
   color: var(--acent-color-text);
 }
+.menu-nav {
+  width: 254px;
+  height: 48px;
+  margin-right: 345px;
+}
 .nav-list-main-item:not(:last-child) {
   margin-right: 46px;
 }
@@ -94,14 +99,11 @@ body {
   margin-bottom: 0px;
   padding-left: 0px;
 }
-
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: var(--second-main-text-color);
 }
-.navigation {
-  margin-right: 345px;
-}
+
 .container-for-contacts {
   display: flex;
   width: fit-content;
@@ -198,22 +200,27 @@ body {
   margin-bottom: 0px;
 }
 .backdrop {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   display: flex;
+  z-index: 1;
+  justify-content: center;
 }
 .modal {
   width: 528px;
   height: 581px;
   background-color: var(--acent-color-for-containers);
-  margin: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  position: fixed;
+  display: block;
+  z-index: 1;
+  align-self: center;
 }
 .is-hidden {
   opacity: 0;
@@ -227,6 +234,9 @@ body {
   cursor: pointer;
   border-radius: 50%;
   margin: 8px 8px 543px 490px;
+  padding: 6px 0px 6px 0px;
+  background-color: var(--acent-color-text);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .buttons-index {
   text-align: center;

@@ -27,19 +27,21 @@
           <a class="logotype" href="./index.html"
             ><span class="piece-of-logotype">Web</span><span>Studio</span>
           </a>
-          <nav class="navigation">
-            <ul class="nav-list">
-              <li class="nav-list-main-item">
-                <a class="nav-list-item" href="/agencja">Agencja</a>
-              </li>
-              <li class="nav-list-main-item">
-                <a class="nav-list-item" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-list-main-item">
-                <a class="nav-list-item" href="/kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="menu-nav">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-list-main-item">
+                  <a class="nav-list-item" href="./index.html">Agencja</a>
+                </li>
+                <li class="nav-list-main-item">
+                  <a class="nav-list-item" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-list-main-item">
+                  <a class="nav-list-item" href="/kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
           <div class="container-for-contacts">
             <a class="contact-links" href="mailto:info@devstudio.com"
@@ -61,7 +63,11 @@
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="close-btn" data-modal-close>X</button>
+          <button type="button" class="close-btn" data-modal-close>
+            <svg width="18px" height="18px">
+              <use href="./images/icons2.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
         </div>
       </div>
 
