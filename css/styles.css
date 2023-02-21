@@ -22,11 +22,10 @@ body {
 .top-page {
   background: var(--acent-color-for-containers);
   width: 100%;
+  height: 80px;
   margin: auto;
   margin-top: 0px;
   margin-left: 0px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,9 +74,9 @@ body {
   color: var(--acent-color-text);
 }
 .menu-nav {
-  width: 254px;
+  margin-top: 32px;
+  margin-right: 330px;
   height: 48px;
-  margin-right: 345px;
 }
 .nav-list-main-item:not(:last-child) {
   margin-right: 46px;
@@ -89,7 +88,20 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  width: 53px;
+  width: fit-content;
+  position: relative;
+  display: inline-block;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  background-color: var(--second-main-text-color);
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  top: 42px;
+  fill: solid;
 }
 
 .nav-list {
@@ -98,6 +110,8 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-item:hover,
 .nav-list-item:focus {
@@ -119,6 +133,8 @@ body {
   width: 161px;
   display: flex;
   text-align: center;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope {
   width: 16px;
@@ -149,6 +165,8 @@ body {
   width: 130px;
   display: flex;
   text-align: center;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-links-2:hover,
 .contact-links-2:focus {
@@ -164,6 +182,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-contacts-color);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-links-bottom:hover,
 .contact-links-bottom:focus {
@@ -221,6 +241,8 @@ body {
   display: block;
   z-index: 1;
   align-self: center;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -237,6 +259,8 @@ body {
   padding: 6px 0px 6px 0px;
   background-color: var(--acent-color-text);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-index {
   text-align: center;
@@ -252,6 +276,8 @@ body {
   border: 0;
   cursor: pointer;
   margin-top: 30px;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-index:hover,
 .buttons-index:focus {
@@ -474,6 +500,8 @@ body {
   border-radius: 50%;
   padding: 12px;
   cursor: pointer;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -550,6 +578,8 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   cursor: pointer;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-rectangle:hover,
 .customer-rectangle:focus {
@@ -626,6 +656,8 @@ body {
   color: var(--acent-color-text);
   margin-top: 0px;
   margin-bottom: 0px;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .location:hover,
 .location:focus {
@@ -652,6 +684,8 @@ body {
   cursor: pointer;
   --color1: var(--acent-color-text);
   background-color: #ffffff1a;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-icons:not(:last-child) {
   margin-right: 10px;
